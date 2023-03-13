@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest operator</title>
+</head>
+<body>
+    <script>
+        // function sum(){
+        //     console.log(arguments);
+
+        // }
+        // sum(20,30,40);
+        // sum(20,30);
+
+
+        // function sum(){
+        //     console.log(arguments);
+        //     let sum = 0;
+        //     for(let i in arguments){
+        //         sum += arguments[i];
+
+        //     }
+        //      document.write(sum+"<br>");
+
+        // }
+        // sum(20,30,40);
+        // sum(20,30);
+
+
+
+        // function sum(){
+        //     console.log(arguments);
+        //     let sum = 0;
+        //     for(let i in arguments){
+        //         sum += arguments[i];
+
+        //     }
+        //      document.write(sum+"<br>");
+
+        // }
+        // sum("yahoo baba",20,30,40);
+
+
+
+
+
+        // function sum(name,...num){
+        //     console.log(arguments);
+        //     let sum = 0;
+        //     for(let i in num){
+        //         sum += num[i];
+
+        //     }
+        //      document.write(sum+"<br>");
+
+        // }
+        // sum("yahoo baba",20,30,40);
+
+
+
+        // function sum(name,...num){
+        //     console.log(arguments);
+
+        //     document.write(`Hello ${name}:`);
+        //     let sum = 0;
+        //     for(let i in num){
+        //         sum += num[i];
+
+        //     }
+        //      document.write(sum+"<br>");
+
+        // }
+        // sum("yahoo baba",20,30,40);
+        // // sum("Govind kumar",55,44,11);
+        // sum("Govind kumar",55,44);
+
+
+
+        function sum(name,course,...num){
+            console.log(arguments);
+
+            document.write(`Hello ${name} of ${course}:`);
+            let sum = 0;
+            for(let i in num){
+                sum += num[i];
+
+            }
+             document.write(sum+"<br>");
+
+        }
+        sum("yahoo baba","Btech",20,30,40);
+        // sum("Govind kumar",55,44,11);
+        sum("Govind kumar","Bsc",55,44);
+        sum("Deepak kumar","BcA",55,44,50,80,90);
+    </script>
+</body>
+</html>

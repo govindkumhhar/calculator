@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP</title>
+</head>
+<body>
+    <script>
+        // class hello{
+        //     massage(){
+        //         console.log("Hello Everyone");
+        //     }
+        //     sorry(){
+        //         console.log("sorry Everyone");
+
+        //     }
+        // }
+
+        // let a = new hello();
+        // a.massage();
+        // a.sorry();
+
+
+        // typeof methods-->
+
+        //1, constructor --->
+
+        // class student{
+        //     constructor(){
+        //         console.log("constructor function");
+
+        //     }
+            
+
+        
+        // }
+
+        // let a = new student();
+        // let b = new student();
+
+
+// prototype--->
+
+        // class student{
+        //     constructor(){
+        //         let name;
+        //         console.log("constructor function");
+
+        //     }
+        //     hello(){
+        //         console.log("Hello "+ this.name)
+                
+        //     }
+        // }
+
+        // let a = new student();
+        // a.name = "yahoo Baba";
+        // a.hello();
+
+
+        // short tarika-->
+
+
+
+    //     class student{
+    //         constructor(name){
+    //             this.studentname = name;
+    //             console.log("constructor function");
+
+    //         }
+    //         hello(){
+    //             console.log("Hello "+ this.studentname)
+                
+    //         }
+    //     }
+
+    //     let a = new student("yahoo Baba");
+    //   a.hello();
+
+
+    // class student{
+    //         constructor(name,age){
+    //             this.studentname = name;
+    //             this.studentage = age;
+    //             console.log("constructor function");
+
+    //         }
+    //         hello(){
+    //             // console.log("Hello "+ this.studentname+"your age is "+this.studentage);
+    //             console.log(`Hello  ${this.studentname} your age is ${this.studentage}`);
+                
+    //         }
+    //     }
+
+    //     let a = new student("yahoo Baba ",25);
+    //     let b = new student("Ram Kumar ",24);
+    //     a.hello();
+    //     b.hello();
+
+// static methods--->
+
+
+class student{
+            constructor(name,age){
+                this.studentname = name;
+                this.studentage = age;
+                console.log("constructor function");
+
+            }
+            hello(){
+                // console.log("Hello "+ this.studentname+"your age is "+this.studentage);
+                console.log(`Hello  ${this.studentname} your age is ${this.studentage}`);
+                
+            }
+
+            static staticMethod(){
+                console.log("static function");
+
+
+            }
+        }
+
+        let a = new student("yahoo Baba ",25);
+        let b = new student("Ram Kumar ",24);
+        a.hello();
+        b.hello();
+        // a.staticMethod();
+        student.staticMethod();
+
+
+    </script>
+</body>
+</html>
